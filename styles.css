@@ -1,4 +1,4 @@
-body {
+ody {
   font-family: "Georgia", "Times New Roman", serif;
   margin: 0;
   padding: 0;
@@ -25,7 +25,7 @@ header {
   border-bottom: 4px solid gold;
 }
 
-#site-logo {
+.site-logo {
   width: 120px;
   height: auto;
 }
@@ -57,12 +57,11 @@ header h3 {
     text-align: center;
   }
 
-  #site-logo {
+  .site-logo {
     width: 100px;
     margin-bottom: 0.5em;
   }
 }
-
 
 nav {
   background-color: #000;
@@ -97,14 +96,14 @@ nav a:hover {
 }
 
 
-#banner {
+.banner {
   position: relative;
   margin-top: 1%;
   border-radius: 8px;
   overflow: hidden;
 }
 
-#banner img {
+.banner img {
   width: 100%;
   height: 375px;
   object-fit: cover;
@@ -112,8 +111,7 @@ nav a:hover {
   display: block;
 }
 
-
-#intro-section {
+.intro {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -121,8 +119,7 @@ nav a:hover {
   margin-top: 2%;
 }
 
-
-#about {
+article {
   background-color: white;
   flex: 0 1 68%;
   padding: 2%;
@@ -130,12 +127,11 @@ nav a:hover {
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-#about h2 {
+article h2 {
   color: #800000;
 }
 
-
-#quote {
+aside {
   flex: 0 1 28%;
   background-color: #fffbe8;
   border-left: 6px solid gold;
@@ -161,7 +157,6 @@ blockquote span {
   font-weight: bold;
 }
 
-
 footer {
   background-color: #000;
   color: white;
@@ -171,13 +166,12 @@ footer {
   margin-top: 2%;
 }
 
-
 @media (max-width: 800px) {
-  #intro-section {
+  .intro {
     flex-direction: column;
   }
 
-  #quote {
+  aside {
     margin-top: 1.5em;
   }
 
@@ -189,3 +183,110 @@ footer {
     text-align: center;
   }
 }
+
+.contact-form {
+  background-color: white;
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-label {
+  display: block;
+  margin-top: 1em;
+  font-weight: bold;
+  color: #800000;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 0.75em;
+  margin-top: 0.25em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.form-buttons {
+  margin-top: 1em;
+  text-align: center;
+}
+
+.form-btn {
+  background-color: #800000;
+  color: white;
+  border: none;
+  padding: 0.75em 2em;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 0.5em;
+}
+
+.form-btn:hover {
+  background-color: gold;
+  color: black;
+}
+
+.gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      margin: 20px auto;
+      max-width: 1200px;
+    }
+
+    .gallery-item {
+      margin: 8px;
+      border: 2px solid #800000;
+      width: 220px;
+      background-color: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    }
+
+    .gallery-item:hover {
+      border-color: gold;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+      transform: scale(1.02);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-bottom: 3px solid #800000;
+    }
+    
+  .gallery-title {
+  text-align: center;
+  color: #800000;
+  margin-top: 20px;
+  font-size: 1.8em;
+  letter-spacing: 0.5px;
+  }
+
+    .desc {
+      padding: 12px;
+      text-align: center;
+      font-size: 0.95em;
+      color: #333;
+      line-height: 1.4;
+      background-color: #fffbe8;
+    }
+
+    @media (max-width: 700px) {
+      .gallery-item {
+        width: 45%;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .gallery-item {
+        width: 100%;
+      }
+    }
