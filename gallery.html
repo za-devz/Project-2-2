@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>African American History: Voices of Strength and Change</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -28,41 +32,115 @@
 </nav>
 
 <main>
-<h2 class="gallery-title">Gallery of African American History</h2>
+  <h2 class="gallery-title">Gallery of African American History</h2>
 
-  <div class="gallery">
-    <div class="gallery-item">
-      <a target="_blank" href="images/mlk.jpg">
-        <img src="mlk.jpg" alt="Martin Luther King Jr.">
-      </a>
-      <div class="desc">Martin Luther King Jr. leading the Civil Rights Movement.</div>
+<div class="card-group">
+
+    <div class="card m-2">
+      <img src="mlk.jpg" class="card-img-top" alt="Martin Luther King Jr.">
+      <div class="card-body">
+        <h5 class="card-title">Martin Luther King Jr.</h5>
+        <p class="card-text">A voice of courage and unity who inspired peaceful change across America.</p>
+      </div>
+      <div class="card-footer">
+        <div class="accordion" id="accordionMLK">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingMLK">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMLK" aria-expanded="false" aria-controls="collapseMLK">
+                Learn More
+              </button>
+            </h2>
+            <div id="collapseMLK" class="accordion-collapse collapse" aria-labelledby="headingMLK" data-bs-parent="#accordionMLK">
+              <div class="accordion-body">
+                Martin Luther King Jr. fought for equality and justice. His dream of a united nation still inspires people today, showing strength through peace.
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
     </div>
 
-    <div class="gallery-item">
-      <a target="_blank" href="rosa.jpg">
-        <img src="rosa.jpg" alt="Rosa Parks">
-      </a>
-      <div class="desc">Rosa Parks and the Montgomery Bus Boycott.</div>
+    <div class="card m-2">
+      <img src="rosa.jpg" class="card-img-top" alt="Rosa Parks">
+      <div class="card-body">
+        <h5 class="card-title">Rosa Parks</h5>
+        <p class="card-text">A quiet act of defiance that sparked a movement for justice.</p>
+      </div>
+      <div class="card-footer">
+        <div class="accordion" id="accordionRosa">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingRosa">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRosa" aria-expanded="false" aria-controls="collapseRosa">
+                Learn More
+              </button>
+            </h2>
+            <div id="collapseRosa" class="accordion-collapse collapse" aria-labelledby="headingRosa" data-bs-parent="#accordionRosa">
+              <div class="accordion-body">
+                Rosa Parks refused to give up her seat in 1955, and that simple act of courage helped start the Civil Rights Movement and inspire change across the country.
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
     </div>
 
-    <div class="gallery-item">
-      <a target="_blank" href="jazz.jpg">
-        <img src="jazz.jpg" alt="Harlem Renaissance Jazz">
-      </a>
-      <div class="desc">Jazz and the Harlem Renaissance shaping American culture.</div>
+    <div class="card m-2">
+      <img src="jazz.jpg" class="card-img-top" alt="Harlem Renaissance Jazz">
+      <div class="card-body">
+        <h5 class="card-title">Harlem Renaissance Jazz</h5>
+        <p class="card-text">Music that became the rhythm of cultural pride and identity.</p>
+      </div>
+      <div class="card-footer">
+        <div class="accordion" id="accordionJazz">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingJazz">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseJazz" aria-expanded="false" aria-controls="collapseJazz">
+                Learn More
+              </button>
+            </h2>
+            <div id="collapseJazz" class="accordion-collapse collapse" aria-labelledby="headingJazz" data-bs-parent="#accordionJazz">
+              <div class="accordion-body">
+                The Harlem Renaissance was a time when Black art and culture thrived. Jazz came from both struggle and joy, becoming a powerful voice that changed American music forever.
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
     </div>
 
-    <div class="gallery-item">
-      <a target="_blank" href="barack.jpg">
-        <img src="barack.jpg" alt="Barack Obama">
-      </a>
-      <div class="desc">Barack Obama making history as the first African American president.</div>
+    <div class="card m-2">
+      <img src="barack.jpg" class="card-img-top" alt="Barack Obama">
+      <div class="card-body">
+        <h5 class="card-title">Barack Obama</h5>
+        <p class="card-text">A symbol of progress and the power of perseverance.</p>
+      </div>
+      <div class="card-footer">
+        <div class="accordion" id="accordionObama">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingObama">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseObama" aria-expanded="false" aria-controls="collapseObama">
+                Learn More
+              </button>
+            </h2>
+            <div id="collapseObama" class="accordion-collapse collapse" aria-labelledby="headingObama" data-bs-parent="#accordionObama">
+              <div class="accordion-body">
+                Barack Obama’s election as the first African American president in 2008 marked a historic milestone in the ongoing story of equality and opportunity. His message of hope, unity, and change reflects the continuing legacy of strength that defines African American history.
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
     </div>
+
   </div>
 </main>
 
 <footer>
-  <p>Last Updated: October 28, 2025</p>
+  <p>Last Updated: November 7, 2025</p>
   <p><a href="#" class="footer-link">Contact Us</a></p>
 </footer>
 
